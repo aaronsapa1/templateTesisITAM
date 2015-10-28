@@ -10,12 +10,12 @@
 % 
 \documentclass{tesisITAM}
 \usepackage[utf8]{inputenc}
-
-\title{Plantilla para Tesis y Tesinas del ITAM}
-\author{Víctor R. Martínez}
-\degree{Lic. Matemáticas Aplicas e Ing. en Computación}
-\advisor{\_}
-\year{2015}
+\usepackage{url}
+\title{POR DEFINIR}
+\author{Aarón Christian Sánchez Padilla}
+\degree{Maestro en Ciencias en Computación}
+\advisor{Dr. José Octavio Gutierrez García}
+\year{2016}
 
 \begin{document}
 
@@ -32,7 +32,7 @@
 	\end{abstract}
 
 	\begin{abstract}{english}
-		In this work we present a template for thesis and titulation works presented at ITAM. It is provided freely and without any responsability under the \emph{creative commons BY-SA 3.0}. 
+		In this work we present a\cite{Modha} template for thesis and titulation works presented at ITAM. It is provided freely and without any responsability underdedsdsddddss the \emph{creative commons BY-SA 3.0}. 
 	\end{abstract}
 
 
@@ -40,9 +40,9 @@
 	\setcounter{page}{1}
 	\pagenumbering{roman}
 
-	\tableofcontents
-	\listoffigures
-	\listoftables
+	%\tableofcontents
+	%\listoffigures
+	%\listoftables
 	\newpage
 
 	\pagenumbering{arabic}
@@ -52,7 +52,7 @@
 	% CONTENT
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\include{Chapters/introduction}
+	\include{Chapters/introduction2}
 
 	% \include{Chapters/relatedwork}
 
@@ -74,18 +74,17 @@
 	\clearpage
 	\addcontentsline{toc}{chapter}{References} %Añadimos la bibliografia a la lista de contenidos.
 	
+	\bibliography{mybib}{}
+	\bibliographystyle{plain}
+	
 	%%%%%%%%% Referencias usando el sistema embedido %%%%%%%%%%%
 	% e.g. (Ejemplo tomado de https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management)
 	%
-	% \begin{thebibliography}{9}
-	%
-	%	\bibitem{lamport94}
-    %			Leslie Lamport,
-    %			\emph{\LaTeX: a document preparation system},
-    %			Addison Wesley, Massachusetts,
-  	%			2nd edition,
-    % 			1994.
-    %
-	% \end{thebibliography}
+%	\begin{thebibliography}{9}	
+%	\bibitem{lamport94}
+%    			Leslie Lamport,
+%    	\emph{\LaTeX: a document preparation system},
+%    		Addison Wesley, Massachusetts,2nd edition,1994.   
+%	 \end{thebibliography}
 
 \end{document}
