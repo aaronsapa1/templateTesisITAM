@@ -11,6 +11,7 @@
 \documentclass{tesisITAM}
 \usepackage[utf8]{inputenc}
 \usepackage{url}
+%\usepackage{apacite}
 \title{POR DEFINIR}
 \author{Aarón Christian Sánchez Padilla}
 \degree{Maestro en Ciencias en Computación}
@@ -32,7 +33,7 @@
 	\end{abstract}
 
 	\begin{abstract}{english}
-		In this work we present a\cite{Modha} template for thesis and titulation works presented at ITAM. It is provided freely and without any responsability underdedsdsddddss the \emph{creative commons BY-SA 3.0}. 
+		In this work we present a template for thesis and titulation works presented at ITAM. It is provided freely and without any responsability underdedsdsddddss the \emph{creative commons BY-SA 3.0}. 
 	\end{abstract}
 
 
@@ -40,7 +41,7 @@
 	\setcounter{page}{1}
 	\pagenumbering{roman}
 
-	%\tableofcontents
+	\tableofcontents
 	%\listoffigures
 	%\listoftables
 	\newpage
@@ -53,13 +54,8 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\include{Chapters/introduction2}
-
-	% \include{Chapters/relatedwork}
-
-	% \include{Chapters/method}
-
-	% \include{Chapters/results}
-
+	
+	\include{Chapters/marcoteorico}
 	% \include{Chapters/conclusions}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,7 +68,7 @@
 	% BIBLIOGRAPHY
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\clearpage
-	\addcontentsline{toc}{chapter}{References} %Añadimos la bibliografia a la lista de contenidos.
+	\addcontentsline{toc}{chapter}{Bibliograf\'{i}a} %Añadimos la bibliografia a la lista de contenidos.
 	
 	\bibliography{mybib}{}
 	\bibliographystyle{plain}
