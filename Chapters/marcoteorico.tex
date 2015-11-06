@@ -1,12 +1,67 @@
 \chapter{Marco Te\'{o}rico}
 \label{ch:marco}
+\section{Arquitecturas de Computadoras}
+
+En concreto, una arquitectura de computadora nos ayuda a especificar los est\'{a}ndares de tecnolog\'{i}a se usaran con respecto al software y de hardware de una computadora. Esto quiere decir que una arquitectura ayuda a establecer el dise\~no de una computadora y las tecnolog\'{a}s con las que este es compatible. Cualquier persona que se dedique a dise\~nar una arquitectura, debe estar consiente de que debe crear un dise\~no l\'{o}gico capaz de cualquiera de las necesidades que presente un usuario o un sistema.
+
+La tarea de un dise\~nador es compleja. Este debe poder determinar los atributos elementales con los que debe contar su dise\~no con el fin de maximizar el desempe\~no y gastar energ\'{i}a de forma eficiente cumpliendo siempre con las restricciones de costo, poder y disponibilidad.
+
+Dentro de las diversas tareas de un dise\~nador de arquitecturas de computadora, encontramos dos principales: el dise\~no del conjunto de instrucciones y la implementaci\'{o}n. Ninguna de las dos tareas es trivial, adicionalmente, estas van de la mano \cite{hennessy2011computer}. 
+
+\subsection{Conjunto de Instrucciones}
+
+El conjunto de instrucciones o ISA (por sus siglas en ingl\'{e}s, “Instruction Set Architecture") es un grupo de reglas con las cuales el software y el hardware se comunican entre s\'{i}. Estas reglas definen las operaciones, los estados y las localidades que soporta el hardware.
+
+Existen diversos modelos de ISA, entre los m\'{a}s conocidos, podemos encontrar: CISC (por sus siglas en ingl\'{e}s “Complex Instruction Set Computing") que como su nombre lo indica, permite realizar operaciones muy complejas y se caracterizan por que cada instrucci\'{o}n cuenta con una gran longitud. RISC es otro modelo (“Reduce Instruction Set Computing") el cual cuenta con instrucciones de tama\~no fijo y un reducido n\'{u}mero de formatos, el objetivo de este modelo es propiciar la segmentaci\'{o}n y el paralelismo.
+
+
+\subsection{Arquitectura Von Neumann}
+
+Adem\'{a}s de ISA la implementaci\'{o}n de los componentes representa un papel muy importante. Dentro de las principales arquitecturas, encontramos la de \emph{Von Neumann}. Esta arquitectura se describe por primera vez en 1945 en el reporte escrito por Von Neumann \cite{von1993first}. Los sistemas con microprocesadores se basan en esta arquitectura, en la cual la unidad central de proceso (CPU), está conectada a una memoria principal única donde se guardan las instrucciones del programa y los datos. A dicha memoria se accede a través de un sistema de buses único
+
+\subsection{Arquitectura Harvard}
+
+ Por otro lado, contamos con la arquitectura Harvard. El término proviene de la computadora \emph{Harvard mark I}, que almacenaba las instrucciones en cintas perforadas y los datos en interruptores. Esta computadora fue el primer ordenador electromecánico construido en la Universidad Harvard por Howard H. Mark en 1944. En esta arquitectura se utilizan dispositivos separados para las instrucciones y los datos, para  que haya mayor rapidez se utiliza la memoria cache dividida, para procesar los datos e instrucciones, es efectivo cuando la lectura de datos e instrucciones es la misma.
+ 
+ Como se puede notar, dentro de la arquitectura de von Neumann, el procesador puede estar bien leyendo una instrucción o escribiendo datos desde o hacia la memoria pero ambos procesos no pueden ocurrir al mismo tiempo, ya que las instrucciones y datos usan el mismo sistema de buses. En una computadora que utiliza la arquitectura Harvard, el procesador puede tanto leer una instrucción como realizar un acceso a la memoria de datos al mismo tiempo.
+
 \section{Inteligencia Artificial}
-La Inteligencia Artificial (IA) como disciplina formal  ha sido estudiada por más de 50 años. En sus principios, uno de los principales objetivos de esta disciplina era determinar si una computadora era capaz de “pensar", esta pregunta es igualmente abordada por Alan Turing\cite{turing1950computing} en su obra \emph{Computing Machinery and Intelligence}. La Inteligencia Artificial de manera simple puede ser definida como: el estudio de procesos mentales o intelectuales en t\'{e}rminos de procesos computacionales \cite{aimodern}. Sin embargo, esta definici\'{o}n varia dentro de la literatura \cite{haugeland1985,bellman1978,winston1992learning}. 
+
+La Inteligencia Artificial (IA) como disciplina formal  ha sido estudiada por más de 50 años. En sus inicios, uno de los principales objetivos de esta disciplina era determinar si una computadora era capaz de “pensar", esta pregunta es igualmente abordada por Alan Turing\cite{turing1950computing} en su obra \emph{Computing Machinery and Intelligence}. La Inteligencia Artificial de manera simple puede ser definida como: el estudio de procesos mentales o intelectuales en t\'{e}rminos de procesos computacionales \cite{aimodern}. Sin embargo, esta definici\'{o}n varia dentro de la literatura \cite{haugeland1985,bellman1978,winston1992learning}. 
 
 Como se puede apreciar, la Inteligencia Artificial tiene una relaci\'{o}n intr\'{i}nseca con la Psicolog\'{i}a, las Ciencias Cognitivas y, a su vez, con las Ciencias en Computaci\'{o}n. Sin embargo, la Inteligencia Artificial no es Psicolog\'{i}a, la distinci\'{o}n recae en que una de las mayores preocupaciones de la Inteligencia Artificial es comprehender de qu\'{e} manera es posible otorgarle a las computadoras una capacidad tan sofisticada como lo es actuar de forma “inteligente".
+
+Adicionalmente, podemos decir que la Inteligencia Artificial intenta entender y crear \emph{agentes inteligentes} capaces de pensar racionalmente. Se enfoca en la inteligencia a trav\'{e}s del pensamiento y la razo\'{o}n. Si este es el caso, se tiene que poder determinar c\'{o}mo los seres humanos piensan. Se necesita indagar en el funcionamiento de las mentes humanas \cite{brooks1995intelligence}.
+
+Actuar racionalmente significa desempe\~nar alguna activaidad para alcanzar los objetivos, con base en las creencias de una persona. Un agente es simplemente algo que percibe y actúa. En este enfoque, la IA es vista como el estudio y construcción de agentes racionales \cite{aimodern}.
+
+La IA es un componente base de las ciencias en computaci\'{o}n debido a su abstracción, programación y formalismos lógicos. La IA  desarrolla  herramientas conceptuales para poder comprender c\'{o}mo se procesa la información y estas herramientas son indispensable para que la psicología pueda entender cómo la información es procesada por los seres humanos \cite{nilsson2014principles}.
+
+El campo interdisciplinario de ciencia cognitiva reúne modelos informáticos de IA y técnicas experimentales de
+psicología para tratar de construir teorías precisas y comprobables del funcionamiento de la mente humana.
+
 \section{C\'{o}mputo Cognitivo}
-\section{Arquitecturas de Computadoras}
+
+A lo largo de nuestras vidas, nosotros, los seres humanos, observamos, percibimos y reflexionamos sobre nuestro medio ambiente y el mundo que nos rodea. Recibimos informaci\'{o}n del mundo a trav\'{e}s de nuestras acciones, experiencias y sentidos. De tal forma, que para poder internalizar toda esta informaci\'{o}n, es l\'{o}gico pensar que nuestra comunicaci\'{o}n es difusa, ambigua, esencial para expresar nuestras experiencias. 
+
+Hoy en día, los humanos crean sistemas virtuales que emulan e interact\'{u}an con nuestro medio ambiente físico. El prop\'{o}sito de estos sistemas, es lograr que interact\'{u}en de forma din\'{a}mica y aut\'{o}noma, que razonen, act\'{u}en y se comuniquen de manera similar a como lo hacen los seres humanos. El principal objetivo del C\'{o}mputo Cognitivo es crear sistemas complejos que imiten los procesos de cognici\'{o}n que llevan a cabo los humanos \cite{crowder2014artificial}.
+
+En general, se entiende a la mente como una colección de procesos de sensaci\'{o}n, percepci\'{o}n, acci\'{o}n, emoci\'{o}n y cognici\'{o}n. La Computaci\'{o}n Cognitiva se enfoca a desarrollar un enfoque coherente, mecanismo unificado y universal con base en las capacidades de la mente. El argumento principal del C\'{o}mputo Cognitivo es que las neur\'{o}nas y las sin\'{a}psis pueden ser descritas por modelos matem\'{a}ticos relativamente compactos, funcionales y fenomenol\'{o}gicos.
+
+La motivación primordial del C\'{o}mputo C\'{ognitivo} es el hecho de que el comportamiento
+del cerebro aparentemente ser rige de manera no aleatoria, con interacciones entre unidades funcionales individuales de control. Esto describe la formaci\'{o}n de sistemas complejos, los cuales, cabe la posibilidad de ser modelados por computadora y simulados para su an\'{a}lisis \cite{cc}
+
+Inteligencia cognitiva real tiene varias manifestaciones, incluyendo la capacidad de adaptarse a situaciones desconocidas en entornos cambiantes din\'{a}micamente.
 \section{Arquitecturas Cognitivas}
+
+Como se ha mencionado repetidamente en los p\'{a}rrafos anteriores, un objetivo de la IA consiste en crear agentes racionales capaces de superar el nivel de competencia ante los humanos. A lo largo de los a\~nos se ha observado un gran avance en diferentes \'{a}reas en d\'{o}nde la IA supera a la mente humana: reconocimiento de patrones, memorizaci\'{o}, recuperaci\'{o}n de grandes vol\'{u}menes de informaci\'{o}n, interpretaci\'{o}n de se\~nales, entre otros. No obstante, cuando se hablan de funciones de cognici\'{o}n de bajo nivel como el reconocimiento de objetos, la IA se encuentra por muy debajo del desempe\~no de su contraparte natural, la mente humana. Adicionalmente, funciones cognitivas de nivel superior como el lenguaje, el razonamiento, la resoluci\'{o}n de problemas o la planificaci\'{o}n involucran estructuras del conocimiento complejas y son considerablemente m\'{a}s dif\'{i}cil de implementar. 
+
+Si hacemos una comparaci\'{o}n podemos observar que los diferentes tipos de memoria lamacenados por el cerebro facilitan el reconocimiento, asociaci\'{o}n sem\'{a}ntica, interpretaci\'{o}n y recuperaci\'{o}n de un gran n\'{u}mero de patrones de informaci\'{o}n complejos. Por otro lado, la organizaci\'{o}n, almacenamiento y recuperaci\'{o}n de informaci\'{o}n en las computadores es completamente diferente. Las arquitecturas de computaci\'{o}n solo aparentan ser universales, en la pr\'{a}ctica siempre se limita el procesamiento de informaci\'{o}n de manera espec\'{i}fica \cite{duch2008cognitive}. 
+ 
+ 
+ No está claro en absoluto si arquitecturas cognitivas (CA) que se ejecuta en
+ordenadores convencionales, llegarán a la flexibilidad del cerebro en las funciones cognitivas de nivel superior o inferior.
+Tradicionalmente funciones cognitivas superiores, como el pensamiento, el razonamiento, planificación, resolución de problemas o
 \section{Redes Bayesianas}
 \section{Modelos de Markov Ocultos}
 \section{Grafos de Factor}
