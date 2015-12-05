@@ -1,29 +1,29 @@
 \chapter{Marco Te\'{o}rico}
 \label{ch:marco}
-\section{Arquitecturas de Computadoras}
+%\section{Arquitecturas de Computadoras}
 
-En concreto, una arquitectura de computadora nos ayuda a especificar los est\'{a}ndares de tecnolog\'{i}a se usaran con respecto al software y de hardware de una computadora. Esto quiere decir que una arquitectura ayuda a establecer el dise\~no de una computadora y las tecnolog\'{a}s con las que este es compatible. Cualquier persona que se dedique a dise\~nar una arquitectura, debe estar consiente de que debe crear un dise\~no l\'{o}gico capaz de satisface cualquiera de las necesidades que presente un usuario o un sistema.
+%En concreto, una arquitectura de computadora nos ayuda a especificar los est\'{a}ndares de tecnolog\'{i}a se usaran con respecto al software y de hardware de una computadora. Esto quiere decir que una arquitectura ayuda a establecer el dise\~no de una computadora y las tecnolog\'{a}s con las que este es compatible. Cualquier persona que se dedique a dise\~nar una arquitectura, debe estar consiente de que debe crear un dise\~no l\'{o}gico capaz de satisfacer cualquiera de las necesidades que presente un usuario o un sistema.
 
-La tarea de un dise\~nador es compleja. Este debe poder determinar los atributos elementales con los que debe contar su dise\~no con el fin de maximizar el desempe\~no y asegurarse que el gasto energ\'{i}a sea de forma eficiente cumpliendo siempre con las restricciones de costo, poder y disponibilidad.
+%La tarea de un dise\~nador es compleja. Este debe poder determinar los atributos elementales con los que debe contar su dise\~no con el fin de maximizar el desempe\~no y asegurarse que el gasto energ\'{i}a sea de forma eficiente cumpliendo siempre con las restricciones de costo, poder y disponibilidad.
 
-Dentro de las diversas tareas de un dise\~nador de arquitecturas de computadora, encontramos dos principales: el dise\~no del conjunto de instrucciones y la implementaci\'{o}n \cite{hennessy2011computer}. 
+%Dentro de las diversas tareas de un dise\~nador de arquitecturas de computadora, encontramos dos principales: el dise\~no del conjunto de instrucciones y la implementaci\'{o}n \cite{hennessy2011computer}. 
 
-\subsection{Conjunto de Instrucciones}
+%\subsection{Conjunto de Instrucciones}
 
-El conjunto de instrucciones o ISA (por sus siglas en ingl\'{e}s, “Instruction Set Architecture") es un grupo de reglas con las cuales el software y el hardware se comunican entre s\'{i}. Estas reglas describen las operaciones, los estados y las localidades que soporta el hardware.
+%El conjunto de instrucciones o ISA (por sus siglas en ingl\'{e}s, “Instruction Set Architecture") es un grupo de reglas con las cuales el software y el hardware se comunican entre s\'{i}. Estas reglas describen las operaciones, los estados y las localidades que soporta el hardware.
 
-Existen diversos modelos de ISA, entre los m\'{a}s conocidos, podemos encontrar: CISC (por sus siglas en ingl\'{e}s “Complex Instruction Set Computing") que como su nombre lo indica, permite realizar operaciones muy complejas y se caracterizan por que cada instrucci\'{o}n cuenta con una gran longitud. RISC es otro modelo (“Reduce Instruction Set Computing") el cual cuenta con instrucciones de tama\~no fijo y un reducido n\'{u}mero de formatos, el objetivo de este modelo es propiciar la segmentaci\'{o}n y el paralelismo.
+%Existen diversos modelos de ISA, entre los m\'{a}s conocidos, podemos encontrar: CISC (por sus siglas en ingl\'{e}s “Complex Instruction Set Computing") que como su nombre lo indica, permite realizar operaciones muy complejas y se caracterizan por que cada instrucci\'{o}n cuenta con una gran longitud. RISC es otro modelo (“Reduce Instruction Set Computing") el cual cuenta con instrucciones de tama\~no fijo y un reducido n\'{u}mero de formatos, el objetivo de este modelo es propiciar la segmentaci\'{o}n y el paralelismo.
 
 
-\subsection{Arquitectura Von Neumann}
+%\subsection{Arquitectura Von Neumann}
 
-Adem\'{a}s de ISA la implementaci\'{o}n de los componentes representa un papel muy importante. Dentro de las principales arquitecturas, encontramos la de \emph{Von Neumann}. Esta arquitectura se describe por primera vez en 1945 en el reporte escrito por Von Neumann \cite{von1993first}. Los sistemas con microprocesadores se basan en esta arquitectura, en la cual la unidad central de proceso (CPU), está conectada a una memoria principal única donde se guardan las instrucciones del programa y los datos. A dicha memoria se accede a través de un sistema de buses único
+%Adem\'{a}s de ISA la implementaci\'{o}n de los componentes representa un papel muy importante. Dentro de las principales arquitecturas, encontramos la de \emph{Von Neumann}. Esta arquitectura se describe por primera vez en 1945 en el reporte escrito por Von Neumann \cite{von1993first}. Los sistemas con microprocesadores se basan en esta arquitectura, en la cual la unidad central de proceso (CPU), está conectada a una memoria principal única donde se guardan las instrucciones del programa y los datos. A dicha memoria se accede a través de un sistema de buses único
 
-\subsection{Arquitectura Harvard}
+%\subsection{Arquitectura Harvard}
 
- Por otro lado, contamos con la arquitectura Harvard. El término proviene de la computadora \emph{Harvard mark I}, que almacenaba las instrucciones en cintas perforadas y los datos en interruptores. Esta computadora fue el primer ordenador electromecánico construido en la Universidad Harvard por Howard H. Mark en 1944. En esta arquitectura se utilizan dispositivos separados para las instrucciones y los datos, para  que haya mayor rapidez se utiliza la memoria cache dividida, para procesar los datos e instrucciones, es efectivo cuando la lectura de datos e instrucciones es la misma.
+ %Por otro lado, contamos con la arquitectura Harvard. El término proviene de la computadora \emph{Harvard mark I}, que almacenaba las instrucciones en cintas perforadas y los datos en interruptores. Esta computadora fue el primer ordenador electromecánico construido en la Universidad Harvard por Howard H. Mark en 1944. En esta arquitectura se utilizan dispositivos separados para las instrucciones y los datos. Para  que haya mayor rapidez se utiliza la memoria cache dividida.
  
- Como se puede notar, dentro de la arquitectura de von Neumann, el procesador se puede encontrar leyendo una instrucción o escribiendo datos desde o hacia la memori,a pero ambos procesos no pueden ocurrir al mismo tiempo ya que las instrucciones y datos usan el mismo sistema de buses. En una computadora que utiliza la arquitectura Harvard, el procesador puede tanto leer una instrucción como realizar un acceso a la memoria de datos al mismo tiempo.
+ %Como se puede notar, dentro de la arquitectura de von Neumann, el procesador se puede encontrar leyendo una instrucción o escribiendo datos desde o hacia la memoria pero ambos procesos no pueden ocurrir al mismo tiempo ya que las instrucciones y datos usan el mismo sistema de buses. En una computadora que utiliza la arquitectura Harvard, el procesador puede tanto leer una instrucción como realizar un acceso a la memoria de datos al mismo tiempo.
 
 \section{Inteligencia Artificial}
 
@@ -42,7 +42,7 @@ psicología para tratar de construir teorías precisas y comprobables del funcio
 
 \section{C\'{o}mputo Cognitivo}
 
-A lo largo la vida, los seres humanos, observan, perciben y reflexionan sobre el medio ambiente y el mundo que los rodea. Reciben informaci\'{o}n del mundo a trav\'{e}s de sus acciones, experiencias y sentidos. De tal forma, que para poder internalizar toda esta informaci\'{o}n, es l\'{o}gico pensar que la comunicaci\'{o}n es difusa, ambigua, esencial para expresar nuestras experiencias \cite{langley2006intelligent}. 
+A lo largo del la vida, los seres humanos, observan, perciben y reflexionan sobre el medio ambiente y el mundo que los rodea. Reciben informaci\'{o}n del mundo a trav\'{e}s de sus acciones, experiencias y sentidos. De tal forma, que para poder internalizar toda esta informaci\'{o}n, es l\'{o}gico pensar que la comunicaci\'{o}n es difusa, ambigua, esencial para expresar nuestras experiencias \cite{langley2006intelligent}. 
 
 Hoy en día, los humanos crean sistemas virtuales que emulan e interact\'{u}an con nuestro medio ambiente físico. El prop\'{o}sito de estos sistemas, es lograr que interact\'{u}en de forma din\'{a}mica y aut\'{o}noma, que razonen, act\'{u}en y se comuniquen de manera similar a como lo hacen los seres humanos. El principal objetivo del C\'{o}mputo Cognitivo es crear sistemas complejos que imiten los procesos de cognici\'{o}n que llevan a cabo los humanos \cite{crowder2014artificial}.
 
@@ -54,7 +54,7 @@ del cerebro aparentemente ser rige de manera no aleatoria, con interacciones ent
 Inteligencia cognitiva real tiene varias manifestaciones, incluyendo la capacidad de adaptarse a situaciones desconocidas en entornos cambiantes din\'{a}micamente.
 \section{Arquitecturas Cognitivas}
 
-Como se ha mencionado repetidamente en los p\'{a}rrafos anteriores, un objetivo de la IA consiste en crear agentes racionales capaces de superar el nivel de competencia ante los humanos. A lo largo de los a\~nos se ha observado un gran avance en diferentes \'{a}reas en d\'{o}nde la IA supera a la mente humana: reconocimiento de patrones, memorizaci\'{o}n, recuperaci\'{o}n de grandes vol\'{u}menes de informaci\'{o}n, interpretaci\'{o}n de se\~nales, entre otros. No obstante, cuando se hablan de funciones de cognici\'{o}n de bajo nivel como el reconocimiento de objetos, la IA se encuentra por muy debajo del desempe\~no de su contraparte natural, la mente humana. Adicionalmente, funciones cognitivas de nivel superior como el lenguaje, el razonamiento, la resoluci\'{o}n de problemas o la planificaci\'{o}n involucran estructuras del conocimiento complejas y son considerablemente m\'{a}s dif\'{i}cil de implementar. 
+Como se ha mencionado repetidamente en los p\'{a}rrafos anteriores, un objetivo de la IA consiste en crear agentes racionales capaces de superar el nivel de competencia ante los humanos. A lo largo de los a\~nos se ha observado un gran avance en diferentes \'{a}reas en d\'{o}nde la IA supera a la mente humana: reconocimiento de patrones, memorizaci\'{o}n, recuperaci\'{o}n de grandes vol\'{u}menes de informaci\'{o}n, interpretaci\'{o}n de se\~nales, entre otros. No obstante, cuando se hablan de funciones de cognici\'{o}n de bajo nivel como el reconocimiento de objetos, la IA se encuentra por debajo del desempe\~no de su contraparte natural, la mente humana. Adicionalmente, funciones cognitivas de nivel superior como el lenguaje, el razonamiento, la resoluci\'{o}n de problemas o la planificaci\'{o}n involucran estructuras del conocimiento complejas y son considerablemente m\'{a}s dif\'{i}cil de implementar. 
 
 Si hacemos una comparaci\'{o}n podemos observar que los diferentes tipos de memoria que almacenan informaci\'{o}n en el cerebro facilitan el reconocimiento, asociaci\'{o}n sem\'{a}ntica, interpretaci\'{o}n y recuperaci\'{o}n de un gran n\'{u}mero de patrones de informaci\'{o}n complejos. Por otro lado, la organizaci\'{o}n, almacenamiento y recuperaci\'{o}n de informaci\'{o}n en las computadores es completamente diferente. Las arquitecturas de computaci\'{o}n solo aparentan ser universales, en la pr\'{a}ctica siempre se limita el procesamiento de informaci\'{o}n de manera espec\'{i}fica \cite{duch2008cognitive}. 
 
@@ -67,6 +67,8 @@ Tres propiedades de diseño clave que subyacen en el desarrollo de cualquier arq
 el aprendizaje y la representaci\'{o}n del conocimiento \cite{langley2009cognitive,duch2008cognitive}. Varios tipos de memoria sirven como depósito para la gran cantidad de informaci\'{o}n, conocimientos y creencias sobre el mundo y de uno mismo; por otro lado, el aprendizaje es el proceso principal que da forma a este conocimiento. La organizaci\'{o}n de la memoria depende de los esquemas de representación del conocimiento. 
  
  No está claro en absoluto si las arquitecturas cognitivas, que se ejecuta en ordenadores convencionales, llegar\'{a}n a la flexibilidad del cerebro en las funciones cognitivas de nivel superior o inferior.
+ 
+ Uno de los primeros intentos en crear una arquitectura cognitiva se refleja en \emph{SOAR}. Se inici\'{o} el desarrollo de este marco de trabajo desde los inicios de la investigaci\'{o}n sobre el c\'{o}mputo cognitivo. Sin embargo, no es la \'{u}nica arquitectura existente, pero s\'{i} una de las m\'{a}s utilizadas y conocidas.
 
 \section{SOAR}
 
@@ -92,18 +94,21 @@ Dentro de las capacidades de \emph{SOAR} podemos encontrar:
 \end{itemize}
 
 
-Al igual que los sistemas de resolución de problemas y razonamiento en IA m\'{a}s comunes, SOAR tiene una representaci\'{o}n simb\'{o}lica expl\'{i}cita de sus tareas, que se manipula por procesos simb\'{o}licos. Codifica su conocimiento de la tarea en un ambiente de estructuras simb\'{o}licas e intenta utilizar este conocimiento para guiar su comportamiento. Tiene un esquema general de los objetivos y sub-objetivos para la representaci\'{o}n de lo que el sistema quiere lograr controlar su comportamiento \cite{laird1987soar}.
+Al igual que los sistemas de resolución de problemas y razonamiento en IA m\'{a}s comunes, SOAR tiene una representaci\'{o}n simb\'{o}lica expl\'{i}cita de sus tareas, que se manipula por procesos simb\'{o}licos. Codifica su conocimiento de la tarea en un ambiente de estructuras simb\'{o}licas e intenta utilizar este conocimiento para guiar su comportamiento \cite{laird1987soar}.
 
 \section{Modelos Gr\'{a}ficos}
+Un "modelo gráfico" es un tipo de red probabil\'{i}stica que tiene sus ra\'{i}ces en varias comunidades de investigaci\'{o}n diferentes, incluyendo la inteligencia artificial, estadísticas y redes neuronales. El marco de trabajo de los modelos gr\'{a}ficos proporciona un formalismo mate\'{a}tico sencillo y unificado que ha hecho posible entender las relaciones entre una amplia variedad de enfoques con base en redes.
+
+Los modelos gr\'{a}ficos utilizan grafos para representar y manipular distribuciones de probabilidad conjunta. El grafo subyacente a un modelo gr\'{a}fico puede ser dirigido, en cuyo caso el modelo es frecuentemente llamado como redes de creencias o redes bayesianas; en el caso de un grafo no dirigido, se le llama campos aleatorios de Markov.
 \subsection{Redes Bayesianas}
 
-Las redes bayesianas son una representaci\'{o}n gr\'{a}fica de dependencias para razonamiento probabil\'{i}stico, en la cual los nodos representan variables aleatorias y los arcos representan relaciones de dependencia directa entre las variables \cite{torres1998bayesian}. Una red bayesiana es un grafo ac\'{i}clico dirigido (al que llamaremos $G$) junto con una distribución de probabilidad particular ($p$).
+Las redes bayesianas son una representaci\'{o}n gr\'{a}fica de dependencias para razonamiento probabil\'{i}stico, en la cual los nodos representan variables aleatorias y los arcos representan relaciones de dependencia directa entre las variables \cite{torres1998bayesian}. Una red bayesiana es un grafo ac\'{i}clico dirigido (al que llamaremos $G$) junto con una distribuci\'{o}n de probabilidad particular ($p$).
 
 Una red bayesiana representa en forma gr\'{a}fica las dependencias e independencias entre variables aleatorias, en particular las independencias condicionales. Lo anterior se representa con la siguiente notaci\'{o}n, para el caso de X independiente de Y dado Z: $P(X|Y,Z)=P(X|Z)$
 
 Cada nodo tiene asociado una función de probabilidad que toma como entrada un conjunto particular de valores de las variables padres del nodo y devuelve la probabilidad de la variable representada por el nodo. Por ejemplo, si por padres son $m$ variables booleanas entonces la función de probabilidad puede ser representada por una tabla de $2^m$ entradas, una entrada para cada una de las $2^m$ posibles combinaciones de los padres siendo verdadero o falso.
 
-Siempre es posible representar a una distribución conjunta como un producto de condicionales de una sola variable. Dado un ordenamiento $X_1,X_2,…,X_k$, podemos escribir (por la regla del producto):
+Siempre es posible representar a una distribuci\'{o}n conjunta como un producto de condicionales de una sola variable. Dado un ordenamiento $X_1,X_2,…,X_k$, podemos escribir (por la regla del producto):
 
 $$p(x_1, \ldots ,x_k)=p(x_1)p(x_2|x_1)p(x_3|x_1,x_2) \cdots p(x_k|x_1,\ldots ,x_{k-1})$$
 
@@ -111,7 +116,7 @@ En primer lugar, una factorizaci\'{o}n de la conjunta puede ser entendida como u
 
 Sea $G$ un grafo dirigido con v\'{e}rtices $X_1,X_2,\ldots,X_k$, denotamos por $Pa(x_i)$ a todos los padres de $X_i$ en $G$.
 
-Sea $p$ una distribución conjunta para $X_1,X_2,\ldots,X_k$. Decimos que $G$ representa a $p$ cuando la conjunta se factoriza como:
+Sea $p$ una distribuci\'{o}n conjunta para $X_1,X_2,\ldots,X_k$. Decimos que $G$ representa a $p$ cuando la conjunta se factoriza como:
 $$p(x_1,x_2,\ldots,x_n)= \Pi^k_{i=1}=p(x_i|Pa(x_i))$$.
 
 El conjunto de distribuciones que son representadas por $G$ lo denotamos por $M(G)$. N\'{o}tese que un grafo ac\'{i}clico no dirigido no establece una distribuci\'{o}n particular, sino un conjunto de posibles distribuciones: todas las distribuciones que se factorizan bajo $G$.
@@ -152,11 +157,11 @@ $P(S_t=j|S_{t-1}=i)=p_{ij}$ no depende de $t$.
 En los modelos de respuesta o de observación, las variables observadas $X_t$ pueden ser discretas o continuas. Si $X_t$ son discretas, cada $P(X_t|S_t)$ está dada por una tabla, que tambi\'{e}n suponemos homog\'{e}nea (no depende de $t$). Si $X_t$ son continuas, entonces estas probabilidades est\'{a}n dadas por densidades condicionales.
 
 \subsection{Grafos de Factor}
-Este modelo gr\'{a} proporciona una forma de “divide y vencer\'{a}s" con
+Este modelo gr\'{a}fico proporciona una forma de “divide y vencer\'{a}s" con
 componentes que pueden ser descompuestos para reducir el
 combinatoria que surge con funciones de m\'{u}ltiples
 variables. La funci\'{o}n podr\'{i}a ser una probabilidad conjunta
-distribuci\'{}on sobre un conjunto de variables aleatorias o un problema que implica la satisfacci\'{o}n de restricciones sobre un conjunto de variables
+distribuci\'{o}n sobre un conjunto de variables aleatorias o un problema que implica la satisfacci\'{o}n de restricciones sobre un conjunto de variables
 
 La operación de gráfico t\'{i}pica es el factor de
 c\'{a}lculo de las marginales en las variables. Para una 
